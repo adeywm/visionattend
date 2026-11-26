@@ -1,0 +1,22 @@
+[project]
+name = "visionattend"
+version = "0.2.0"
+description = "A local face verification attendance demo"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "fastapi>=0.110,<1",
+    "uvicorn[standard]>=0.27,<1",
+    "opencv-python-headless>=4.8,<5",
+    "numpy>=1.24,<3",
+    "python-multipart>=0.0.9,<1",
+    "email-validator>=2,<3",
+    "pillow>=11,<14",
+    "tzdata>=2025.1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "httpx2>=2,<3"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

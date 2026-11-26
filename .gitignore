@@ -1,0 +1,17 @@
+__pycache__/
+.venv/
+data/
+models/*.onnx
+models/*.download
+*.pyc
+*.db
+*.sqlite*
+*.pem
+*.key
+.env
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+tmp*/
+node_modules/
